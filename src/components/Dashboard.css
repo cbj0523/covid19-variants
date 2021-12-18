@@ -1,0 +1,22 @@
+.dashboardContainer {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border-radius: 1vw;
+    padding: 1vw;
+    padding-top: 1.4vw;
+    padding-bottom: 1.4vw;
+    margin-top: -1.2vw;
+}
+
+.cardContainer {
+    display: flex;
+}
+
+.cardText {
+    margin-left: 0.5vw;
+}
+
+.cardText > h3 {
+    margin-top: 0.2vw;
+}
