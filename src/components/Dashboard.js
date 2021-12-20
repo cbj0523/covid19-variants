@@ -17,29 +17,25 @@ const Dashboard = (props) => {
     const getTotalnNewState = () => {
         axios.get("https://api.corona-19.kr/korea/?serviceKey=U3KqLAitkIpu6GBwe4locjsYzXWg5yP7Z").then(
         (res) => {
-            console.log(res.data);
             setTotalCase(parseInt(res.data.TotalCase.replace(",", "")));
             setnewCase(parseInt(res.data.TotalCaseBefore.replace(",", "")));
             setDeathCase(parseInt(res.data.TotalDeath.replace(",", "")));
             setDeathPercentage(res.data.deathPercentage);
-
-            console.log(res.data.TotalDeath);
-            console.log(res.data.deathPercentage);
             }
         )
     }
 
-    const getVaccinated = () => {
-        axios.get("https://nip.kdca.go.kr/irgd/cov19stats.do?list=all", { Headers: {
-            "Access-Control-Allow-Origin": "*"
-        } }).then( (res) => {
-            console.log(res.data);
-        });
-    }
+    // const getVaccinated = () => {
+    //     axios.get("https://nip.kdca.go.kr/irgd/cov19stats.do?list=all", { Headers: {
+    //         "Access-Control-Allow-Origin": "*"
+    //     } }).then( (res) => {
+    //         console.log(res.data);
+    //     });
+    // }
 
     useEffect(() => {
         getTotalnNewState();
-        getVaccinated();
+        // getVaccinated();
     })
 
     return (
