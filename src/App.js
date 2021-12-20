@@ -30,6 +30,10 @@ function App() {
         <VariantCard imgComponent={Delta} variantName="Delta" variantInformation={VariantDATA.delta} />
         <VariantCard imgComponent={Omicron} variantName="Omicron" variantInformation={VariantDATA.omicron} />
       </div>
+      <footer style={{ textAlign: "center", marginTop: "1vw", marginBottom: "1vw"}}>
+        <p>이 홈페이지의 저작권은 2021 상당고등학교 1학년 3반 최병준(github.com/cbj0523) 에게 있습니다.</p>
+        <p>Copyright (C) 2021 최병준 all rights reserved.</p>
+      </footer>
     </Container>
   );
 
