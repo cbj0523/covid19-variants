@@ -26,7 +26,7 @@ function App() {
         <hr />
         <VariantCard imgComponent={Alpha} variantName="Alpha" variantInformation={VariantDATA.alpha} />
         <VariantCard imgComponent={Beta} variantName="Beta" variantInformation={VariantDATA.beta} />
-        <VariantCard imgComponent={Gamma} variantName="Gamma"variantInformation={VariantDATA.gamma}  />
+        <VariantCard imgComponent={Gamma} variantName="Gamma" variantInformation={VariantDATA.gamma}  />
         <VariantCard imgComponent={Delta} variantName="Delta" variantInformation={VariantDATA.delta} />
         <VariantCard imgComponent={Omicron} variantName="Omicron" variantInformation={VariantDATA.omicron} />
       </div>
